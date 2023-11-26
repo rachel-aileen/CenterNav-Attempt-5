@@ -1,0 +1,124 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* ///////// Navigation Bar ////////// */
+
+.navigation {
+    background-color: pink;
+}
+
+.navigation > .container {
+    max-width: 90%;
+    margin: auto;
+}
+
+.navigation .navbar {
+    position: relative;
+}
+
+.navigation .navbar .logo-toggle-container {
+    position: absolute;
+    left: 50%;
+    top: 5px;
+    transform: translateX(-50%);
+}
+
+.navigation .navbar .logo-toggle-container a{
+    display: block;
+}
+
+.navigation .navbar .logo-toggle-container a img {
+    width: 22em;
+}
+
+.navigation .menu {
+    text-align: right;
+}
+
+.navigation .menu li {
+    display: inline-block;
+    padding: 48px 10px;
+
+}
+
+.navigation .menu li a {
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-weight: 600;
+    color: green;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.navigation .menu li:nth-child(1),
+.navigation .menu li:nth-child(2),
+.navigation .menu li:nth-child(3) {
+    float: left;
+}
+
+
+.navigation .menu li:hover a{
+    color: purple;
+    transition: all 0.3s ease;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .navigation.menu {
+        display: block !important;
+        height: auto !important;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .navigation .menu {
+        text-align: center;
+        
+    }
+    
+    .navigation .navbar .logo-toggle-container a img {
+        width: 11em;
+        padding-top: 24px;
+    }
+    
+    .navigation .navbar .logo-toggle-container {
+        position: static;
+        transform: translateX(0%);
+    }
+
+    .navigation .navbar .logo-toggle-container a {
+        width: 80%;
+    }
+    .navigation .navbar .logo-toggle-container .toggle-box {
+        position: absolute;
+        right: 10px;
+        top: 30px;
+        display: block;
+        width: 30px;
+        background: #000;
+        padding: 15px 9px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .navigation .navbar .logo-toggle-container .toggle-box span {
+        display: block;
+        max-width: 90% !important;
+        margin: auto !important;
+        height: 3px !important;
+        background-color: white !important;
+        margin-bottom: 4px !important;
+    }
+
+    .navigation .navbar .logo-toggle-container .toggle-box span:last-child{
+        margin-bottom: 0;
+    }
+}
+
+

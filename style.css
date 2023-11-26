@@ -70,7 +70,7 @@
 
 @media screen and (min-width: 1024px) {
     .navigation.menu {
-        display: block !important;
+        display: none !important;
         height: auto !important;
     }
 }
@@ -79,6 +79,14 @@
 @media screen and (max-width: 900px) {
     .navigation .menu {
         text-align: center;
+        display: none;
+        width: 100%;
+    }
+
+    .navigation .menu li {
+        display: block;
+        float: none !important;
+        padding: 0 10px;
         
     }
     
